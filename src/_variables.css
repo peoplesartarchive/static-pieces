@@ -1,0 +1,24 @@
+/*
+   VARIABLES
+*/
+
+
+/* Breakpoints */
+
+@custom-media --medium-and-larger screen and (min-width: 30em);
+@custom-media --breakpoint-medium screen and (min-width: 30em) and (max-width: 60em);
+@custom-media --breakpoint-large screen and (min-width: 60em);
+
+
+
+/* Type Scale */
+
+:root {
+  --font-size-1: 96px;
+  --font-size-2: 62px;
+  --font-size-3: 48px;
+  --font-size-4: 32px;
+  --font-size-5: 24px;
+  --font-size-6: 19px;
+  --font-size-7: 16px;
+}

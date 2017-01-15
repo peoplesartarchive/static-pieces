@@ -1,0 +1,70 @@
+{
+  "name": "nkd",
+  "description": "Barebones scaffolding for developing a jekyll site.",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrmrs/nkd.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mrmrs/nkd/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "homepage": "http://nkd.cc",
+  "keywords": [
+    "jekyll",
+    "ruby",
+    "static site generator",
+    "html5",
+    "css",
+    "sass",
+    "template"
+  ],
+  "devDependencies": {
+    "parallelshell": "^2.0.0",
+    "tachyons-cli": "^0.3.3",
+    "watch": "^0.17.1"
+  },
+  "contributors": [
+    {
+      "name": "Jake Champion",
+      "email": "me@jakechampion.name"
+    },
+    {
+      "name": "Dave C. Copeland",
+      "email": "davetron5000@gmail.com"
+    },
+    {
+      "name": "Doug March",
+      "email": "dougmarch@gmail.com"
+    },
+    {
+      "name": "Chris Blanch",
+      "url": "http://chrisblanch.com"
+    },
+    {
+      "name": "David Potsiadlo",
+      "email": "davidpots@gmail.com"
+    },
+    {
+      "name": "Huy Hong",
+      "email": "me@huyhong.com"
+    },
+    {
+      "name": "Kyle MacDonald",
+      "email": "macdonaldky@gmail.com"
+    },
+    {
+      "name": "Adam Morse",
+      "email": "hi@mrmrs.cc"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bundle install",
+    "serve": "bundle exec jekyll liveserve",
+    "build": "tachyons src/nkd.css > css/nkd.css && tachyons src/nkd.css --minify > css/nkd.min.css && tachyons src/nkd.css --generate-docs --package=../../package.json > readme.md",
+    "watch": "watch 'npm run build' src/",
+    "start": "parallelshell 'npm run serve' 'npm run watch'"
+  }
+}
