@@ -70,7 +70,7 @@ dfn { font-style: italic; }
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 { font-size: 2em; margin: 0.67em 0; }
+h1 { font-size: 2em; margin: .67em 0; }
 /**
  * Address styling not present in IE 8/9.
  */
@@ -190,7 +190,7 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 /**
  * Define consistent border, margin, and padding.
  */
-fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: .35em .625em .75em; }
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
@@ -252,7 +252,7 @@ body, .sans-serif { font-family: -apple-system, "Avenir Next", Avenir, "Helvetic
 /* Measure */
 .measure { max-width: 30em; }
 /* Casing */
-.caps { text-transform: uppercase; letter-spacing: 0.1em; }
+.caps { text-transform: uppercase; letter-spacing: .1em; }
 .title-casing { text-transform: capitalize; }
 /* Alignment */
 .tr { text-align: right; }
