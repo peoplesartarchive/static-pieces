@@ -1,0 +1,44 @@
+---
+# SAMPLE FRONT MATTER
+# Every post needs front matter. You
+# can add anything you want - and then access it via liquid tags.
+
+# Titles are not required by default
+title: "Vhils piece at Avenida da India"
+
+# You are required to specify a layout
+layout: post
+---
+
+<header>
+  <h1>{{ page.title }}</h1>
+</header>
+
+<img src="{{site.url}}/assets/vhils.jpg" class="w-70-l w-80-m w-90">
+<div id="mapid" class="w-70-l w-80-m w-90 h5"></div>
+
+<p class="measure lh-copy">
+  Details about the piece:
+</p>
+<ul>
+  <li>Artist: Vhils</li>
+  <li>Year: 2014</li>
+  <li>Location: Avenida da Índia, 28 (38.701867, -9.175890)</li>
+  <li>Photographer: Ana Pereira</li>
+</ul>
+<p class="measure lh-copy">
+  References:
+</p>
+<ul>
+  <li><a href="http://www.stick2target.com/2014/08/vhils-in-alcantara/">Vhils in Alcântara</a></li>
+  <li><a href="http://www.under-dogs.net/public-art/vhils/wall-22/">Vhils Wall - Underdogs Public Art</a></li>
+</ul>
+<script>
+  var map = L.map('mapid').setView([38.7018, -9.1758], 15);
+
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([38.701867, -9.175890]).addTo(map)
+</script>

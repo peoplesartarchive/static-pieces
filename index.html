@@ -12,5 +12,17 @@ layout: default
   <p class="measure lh-copy">Everything here is a work in progress.</p>
 </main>
 <footer class="pa3">
+{% if site.posts %}
+  <h2 class="f6 fw6">Pieces</h2>
+  <ul class="list-reset pl0 ml0 lh-copy">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}" title="{{post.title}}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 <small>Copyright 2017</small>
 </footer>
