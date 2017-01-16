@@ -27,7 +27,7 @@ author: "People's Art Archive"
 
 # Change this to your production URL
 # ============================================================
-url: "https://www.peoplesartarchive.com/"
+url: "https://static-pieces.herokuapp.com/"
 
 # Publish future posts or not option.
 # ============================================================
